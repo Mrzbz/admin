@@ -811,13 +811,13 @@ a:focus {
 .top_nav .navbar-right {
     margin: 0;
     width: 70%;
-    float: right
+    float: right;
 }
 
 .top_nav .navbar-right li {
     display: inline-block;
     float: right;
-    position: static
+    position: static;
 }
 
 @media (min-width: 480px) {
@@ -1734,6 +1734,7 @@ td.details {
     border: 1px solid #aaa;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+    border-radius: 5px;
     padding: 2px 5px;
     margin: 0 3px;
     cursor: pointer
