@@ -14,7 +14,7 @@ if(!preg_match($upwdPattern,$upwd)){
     echo  '{"code":-1,"msg":"密码格式不正确"}';
     exit;
 }
-$sql="SELECT * FROM xz_user WHERE uname='$uname' AND upwd=md5($upwd)";
+$sql="SELECT * FROM xz_user WHERE uname='$uname' AND upwd=$upwd";
 $result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_assoc($result);
 if($row==null){

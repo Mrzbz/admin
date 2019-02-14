@@ -24,7 +24,8 @@ $("[name='usubmit']").click(e=>{
         success:function(data){
             if(data.code>0){
                 alert(data.msg);
-                location.href="main.html";
+                // location.href="main.html";
+                location.href="product_list.html";
             }else{
                 alert(data.msg);
             }
